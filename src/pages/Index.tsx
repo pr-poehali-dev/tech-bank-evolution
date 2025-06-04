@@ -1,12 +1,34 @@
-// Update this page (the content is just a fallback if you fail to update the page)
 
-const Index = () => {
+import Header from '@/components/Header';
+import Hero from '@/components/Hero';
+import AboutUs from '@/components/AboutUs';
+import Products
+      hours: 'Пн-Пт: 9:00-20:00, Сб: 10:00-18:00',
+      services: ['Кредиты', 'Карты', 'Инвестиции', 'VIP-зона'],
+      metro: 'Тверская',
+      phone: '+7 (495) 123-45-67'
+    },
+    {
+      id: 2,
+      name: 'NeoBank Сити',
+      address from '@/components/Products';
+import Calculator from '@/components/Calculator';
+import LocationMap from '@/components/LocationMap';
+import NewsSection from '@/components/NewsSection';
+import Footer from '@/components/Footer';
+
+const Index = () => {: 'Пресненская наб., 12',
+      hours: 'Пн-Пт: 8:00-21:00, С
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
-      </div>
+    <div className="min-h-screen bg-white">
+      <Header />
+      <Hero />
+      <AboutUs />
+      <Products />
+      <Calculator />
+      б-Вс: <LocationMap />
+      <NewsSection />
+      <Footer />
     </div>
   );
 };
